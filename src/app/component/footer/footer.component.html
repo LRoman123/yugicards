@@ -1,0 +1,15 @@
+<footer class="page-footer grey lighten-2 pt-3">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let item of image" class="col-lg-2 col-md-12 mb-4">
+                <div class="view overlay z-depth-1-half">
+                    <img [src]=item.url class="img-fluid" title="{{ item.nombre }}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="#"> localhost:4200</a>
+    </div>
+</footer>
